@@ -6,6 +6,10 @@ export const Navbar = styled.div`
   position: relative;
   background: black;
   color: white;
+
+  @media (max-width: 500px) {
+    padding-bottom: 15px;
+  }
 `;
 
 export const Title = styled.div`
@@ -18,7 +22,7 @@ export const Title = styled.div`
   z-index: 10;
 
   @media (max-width: 500px) {
-    font-size: 20px;
+    font-size: 32px;
   }
 `;
 
@@ -40,6 +44,8 @@ export const NavLinks = styled.div`
 
   @media (max-width: 500px) {
     font-size: 14px;
+    margin-top: 30px;
+    padding: 0 18vw;
   }
 `;
 

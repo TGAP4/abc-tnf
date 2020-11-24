@@ -6,14 +6,16 @@ export const Modal = styled.div`
   align-items: center;
   background: #EEEEEE;
   padding: 40px 50px;
+  width: 330px;
   margin: auto;
   border-radius: 5px;
-  font-weight: 500;
+  font-weight: 700;
   position: absolute;
-  z-index: 100;
+  z-index: 11;
   top: 45px;
-  left: calc(50% - 166px);
+  left: calc(50% - 165px);
   box-shadow: 0 30px 30px black;
+  box-sizing: border-box;
 `;
 
 export const XButton = styled.div`
@@ -26,12 +28,14 @@ export const XButton = styled.div`
 
 export const Title = styled.div`
   font-size: 28px;
-  line-height: 28px;
+  line-height: 32px;
   font-weight: 700;
+  text-align: center;
 `;
 
 export const Field = styled.div`
-  margin-top: 18px;
+  margin-top: 16px;
+  width: 100%;
 `;
 
 export const Input = styled.input`
@@ -49,7 +53,7 @@ export const Button = styled.div`
   padding: 15px 30px;
   cursor: pointer;
   background: green;
-  margin-top: 25px;
+  margin-top: 30px;
   border-radius: 3px;
   color: white;
   font-weight: 600;

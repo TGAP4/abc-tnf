@@ -25,7 +25,7 @@ const Navbar = () => {
       <S.Navbar>
         <S.Title
           as={Link}
-          to='/'
+          to='/abc-tnf'
         >
           SCHWIFTYPEDIA
         </S.Title>

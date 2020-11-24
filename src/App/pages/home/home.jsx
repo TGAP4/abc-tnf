@@ -35,7 +35,7 @@ const Home = () => {
       <S.Home>
         <S.Button
           as={Link}
-          to='/characters'
+          to='/abc-tnf/characters'
         >
           CHARACTERS
         </S.Button>
@@ -45,7 +45,7 @@ const Home = () => {
         />
         <S.Button
           as={Link}
-          to='/episodes'
+          to='/abc-tnf/episodes'
         >
           EPISODES
         </S.Button>

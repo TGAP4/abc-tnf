@@ -10,19 +10,21 @@ const EpisodeModal = (props) => {
     setModalEpisode,
   } = props;
   
-  const [characterNames, setCharacterNames] = useState([]);
+  const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
-    let characters = [];
+    (async () => {
+      let characterIds = [];
+      episode.characters.forEach(characterUrl => {
+        const characterId = characterUrl.split('character/')[1];
+        characterIds.push(characterId);
+      });
 
-    episode.characters.forEach(async characterUrl => {
-      const responseJson = await axios.get(characterUrl);
-      characters.push(responseJson.data.name);
+      const responseJson = await axios.get(`https://rickandmortyapi.com/api/character/${characterIds}`);
+      const characterNames = responseJson.data.map(char => char.name);
 
-      if (characters.length === episode.characters.length) {
-        setCharacterNames(characters);
-      }
-    });
+      setCharacters(characterNames);
+    })();
   }, [episode.characters]);
 
   return (
@@ -43,11 +45,11 @@ const EpisodeModal = (props) => {
         <S.Label>AIR DATE</S.Label>
         <div>{episode.air_date || 'Unknown'}</div>
         <S.Label>CHARACTERS</S.Label>
-        {characterNames.map((characterName, i) =>
+        {characters.map((character, i) =>
           <div 
             key={`ep-${i}`}
           >
-            {characterName}
+            {character}
           </div>
         )}
       </S.Info>

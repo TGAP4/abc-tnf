@@ -23,9 +23,9 @@ const LoginModal = (props) => {
   const handleSubmit = () => {
     setSubmitted(true);
 
-    if (!name || !email || !password) return;
+    if (!email || !password) return;
 
-    if (modalType === 'Sign Up' && password !== confirmPassword) return;
+    if (modalType === 'Sign Up' && (password !== confirmPassword || !name)) return;
 
     dispatch(signupLogin(email));
     setSuccess(true);
@@ -43,15 +43,17 @@ const LoginModal = (props) => {
           <S.Title>
             {modalType}
           </S.Title>
-          <S.Field>
-            <div>NAME</div>
-            <S.Input 
-              type='text'
-              onChange={e => setName(e.target.value)}
-              value={name}
-              error={submitted && !name}
-            />
-          </S.Field>
+          {modalType === 'Sign Up' &&
+            <S.Field>
+              <div>NAME</div>
+              <S.Input 
+                type='text'
+                onChange={e => setName(e.target.value)}
+                value={name}
+                error={submitted && !name}
+              />
+            </S.Field>
+          }
           <S.Field>
             <div>EMAIL</div>
             <S.Input 
@@ -90,7 +92,7 @@ const LoginModal = (props) => {
       ) : (
         <S.Modal>
           <S.Title>
-            {name} has {modalType === 'Sign Up' ? 'signed up!' : 'logged in!'}
+            {modalType === 'Sign Up' ? `${name} has signed up!` : 'You are now signed in!'}
           </S.Title>
           <S.Button
             onClick={() => setModalType('')}

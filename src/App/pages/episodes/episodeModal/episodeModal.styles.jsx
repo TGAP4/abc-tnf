@@ -26,6 +26,7 @@ export const XButton = styled.div`
   top: 10px;
   right: 12px;
   cursor: pointer;
+  font-weight: 700;
 `;
 
 export const Title = styled.div`

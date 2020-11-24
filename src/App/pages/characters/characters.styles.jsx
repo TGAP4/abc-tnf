@@ -11,11 +11,15 @@ export const Container = styled.div`
 
 export const Title = styled.div`
   font-size: 36px;
+
+  @media (max-width: 500px) {
+    text-align: center;
+  }
 `;
 
 export const Characters = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   grid-gap: 30px;
   margin-top: 25px;
 `;
