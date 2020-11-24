@@ -4,7 +4,6 @@ import storage from 'redux-persist/lib/storage';
 import {
   SIGNUP_LOGIN,
   LOGOUT,
-  TOGGLE_MODAL,
 } from './types';
 
 

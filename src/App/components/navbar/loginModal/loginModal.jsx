@@ -70,7 +70,7 @@ const LoginModal = (props) => {
               error={submitted && (!password || (password !== confirmPassword))}
               />
           </S.Field>
-          {modalType !== 'Login' &&
+          {modalType === 'Sign Up' &&
             <S.Field>
               <div>CONFIRM PASSWORD</div>
               <S.Input 
