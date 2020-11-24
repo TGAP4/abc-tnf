@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.c8ba27fd.chunk.css",
-    "main.js": "/static/js/main.f2b319dd.chunk.js",
-    "main.js.map": "/static/js/main.f2b319dd.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2f540e7a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2f540e7a.js.map",
-    "static/js/2.b377c78d.chunk.js": "/static/js/2.b377c78d.chunk.js",
-    "static/js/2.b377c78d.chunk.js.map": "/static/js/2.b377c78d.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.c8ba27fd.chunk.css.map": "/static/css/main.c8ba27fd.chunk.css.map",
-    "static/js/2.b377c78d.chunk.js.LICENSE.txt": "/static/js/2.b377c78d.chunk.js.LICENSE.txt",
-    "static/media/get_schwifty.001b8fff.mp3": "/static/media/get_schwifty.001b8fff.mp3",
-    "static/media/rick-morty.df79dbf0.jpg": "/static/media/rick-morty.df79dbf0.jpg",
-    "static/media/index.css": "/static/media/stars-background.c1ffa926.jpg",
-    "static/media/volume-icon.0ed76ab0.png": "/static/media/volume-icon.0ed76ab0.png"
+    "main.css": "/abc-tnf/static/css/main.5a829e53.chunk.css",
+    "main.js": "/abc-tnf/static/js/main.b41330a7.chunk.js",
+    "main.js.map": "/abc-tnf/static/js/main.b41330a7.chunk.js.map",
+    "runtime-main.js": "/abc-tnf/static/js/runtime-main.dddb9d12.js",
+    "runtime-main.js.map": "/abc-tnf/static/js/runtime-main.dddb9d12.js.map",
+    "static/js/2.7a572c84.chunk.js": "/abc-tnf/static/js/2.7a572c84.chunk.js",
+    "static/js/2.7a572c84.chunk.js.map": "/abc-tnf/static/js/2.7a572c84.chunk.js.map",
+    "index.html": "/abc-tnf/index.html",
+    "static/css/main.5a829e53.chunk.css.map": "/abc-tnf/static/css/main.5a829e53.chunk.css.map",
+    "static/js/2.7a572c84.chunk.js.LICENSE.txt": "/abc-tnf/static/js/2.7a572c84.chunk.js.LICENSE.txt",
+    "static/media/get_schwifty.001b8fff.mp3": "/abc-tnf/static/media/get_schwifty.001b8fff.mp3",
+    "static/media/rick-morty.df79dbf0.jpg": "/abc-tnf/static/media/rick-morty.df79dbf0.jpg",
+    "static/media/index.css": "/abc-tnf/static/media/stars-background.c1ffa926.jpg",
+    "static/media/volume-icon.0ed76ab0.png": "/abc-tnf/static/media/volume-icon.0ed76ab0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2f540e7a.js",
-    "static/js/2.b377c78d.chunk.js",
-    "static/css/main.c8ba27fd.chunk.css",
-    "static/js/main.f2b319dd.chunk.js"
+    "static/js/runtime-main.dddb9d12.js",
+    "static/js/2.7a572c84.chunk.js",
+    "static/css/main.5a829e53.chunk.css",
+    "static/js/main.b41330a7.chunk.js"
   ]
 }
